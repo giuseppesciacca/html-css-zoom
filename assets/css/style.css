@@ -1,0 +1,66 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region COMMON and Utilities */
+body{
+    font-family:'Internacional','Helvetica','Arial';
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+}
+
+.col-7{
+    width: calc(100% / 7);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+/* #endregion COMMON and Utilities */
+
+/* #region MAIN */
+
+#app-main{
+    background: #222222;
+}
+
+.container{
+    background-color: black;
+}
+
+.row{
+    padding: 4rem;
+}
+
+.col-7{
+    padding: 0.25rem;
+}
+
+.card{
+    position: relative;
+}
+
+.card > img{
+    max-width: 100%;
+}
+
+.card p {
+    font-size: 0.75rem;
+    color: white;
+    position: absolute;
+    padding: 0.25rem;
+    bottom: 4%;
+    left:0;
+    background-color: rgba(128, 128, 128, 0.5);
+}
