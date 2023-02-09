@@ -13,7 +13,7 @@ body{
 .container{
     width: 95%;
     margin: auto;
-    height: 100vh;
+    height: 100%;
 }
 
 .col-7{
@@ -28,6 +28,13 @@ body{
     flex-wrap: wrap;
 }
 /* #endregion COMMON and Utilities */
+
+/* #region HEADER */
+#app-header{
+    background-color:#222222;
+    padding: 0.5rem;
+}
+/* #endregion HEADER */
 
 /* #region MAIN */
 
@@ -64,3 +71,45 @@ body{
     left:0;
     background-color: rgba(128, 128, 128, 0.5);
 }
+
+/* #endregion MAIN */
+
+/* #region FOOTER */
+#app-footer, #app-footer>.container{
+    background: #222222;
+}
+
+#app-footer>.container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sources >div, #main-menu >div, #close-call>div{
+    text-align: center;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+
+#app-footer>.container p{
+    font-size: 0.60rem;
+}
+
+#app-footer, #app-footer i{
+    color: white;
+}
+
+#share-screen a > i{
+    color: #4bc800;
+}
+
+#close-call{
+    background-color: #4a4a4a;
+    color: #f30a1c;
+    padding: 1rem;
+}
+
+
+
+/* #endregion FOOTER */
+
+
