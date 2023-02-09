@@ -15,7 +15,7 @@ body {
     margin: auto;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -32,10 +32,6 @@ a{
 }
 
 /* #endregion COMMON and Utilities */
-
-/* #region HEADER */
-
-/* #endregion HEADER */
 
 /* #region MAIN */
 
@@ -55,7 +51,7 @@ a{
     right: 0;
 }
 
-#float-menu a{
+#float-menu a {
     color: white;
     background-color: #4a4a4a;
     border-radius: 0.25rem;
@@ -63,7 +59,7 @@ a{
     font-size: 0.65rem;
 }
 
-#float-menu .maximize{
+#float-menu .maximize {
     margin: 0 0.2rem;
 }
 
@@ -98,7 +94,7 @@ a{
 
 /* #region FOOTER */
 #app-footer {
-    height: 4rem;
+    height: 3rem;
 }
 
 #app-footer,
@@ -108,6 +104,12 @@ a{
 
 #app-footer>.container {
     justify-content: space-between;
+    align-items: center;
+}
+
+#sources,
+#main-menu,
+#close-call {
     align-items: center;
 }
 
@@ -141,7 +143,5 @@ a{
     color: #f30a1c;
     font-size: 0.75rem;
 }
-
-
 
 /* #endregion FOOTER */
