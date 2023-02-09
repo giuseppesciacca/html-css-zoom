@@ -1,64 +1,67 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* #region COMMON and Utilities */
-body{
-    font-family:'Internacional','Helvetica','Arial';
+body {
+    font-family: 'Internacional', 'Helvetica', 'Arial';
 }
 
-.container{
+.container {
     width: 95%;
     margin: auto;
-    height: 100%;
 }
 
-.col-7{
+.col-7 {
     width: calc(100% / 7);
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
+
 /* #endregion COMMON and Utilities */
 
 /* #region HEADER */
-#app-header{
-    background-color:#222222;
-    padding: 0.5rem;
+#app-header {
+    background-color: #222222;
+    height: 1rem;
 }
+
 /* #endregion HEADER */
 
 /* #region MAIN */
 
-#app-main{
+#app-main {
     background: #222222;
+    height: calc(100vh - 4rem);
 }
 
-.container{
+.container {
     background-color: black;
 }
 
-.row{
-    padding: 4rem;
+.row {
+    padding: 2rem 3rem;
 }
 
-.col-7{
+.col-7 {
     padding: 0.25rem;
 }
 
-.card{
+.card {
     position: relative;
+    align-items: center;
 }
 
-.card > img{
+.card>img {
     max-width: 100%;
 }
 
@@ -68,48 +71,59 @@ body{
     position: absolute;
     padding: 0.25rem;
     bottom: 4%;
-    left:0;
+    left: 0;
     background-color: rgba(128, 128, 128, 0.5);
 }
 
 /* #endregion MAIN */
 
 /* #region FOOTER */
-#app-footer, #app-footer>.container{
+#app-footer {
+    height: 3rem;
+}
+
+#app-footer,
+#app-footer>.container {
     background: #222222;
 }
 
-#app-footer>.container{
+#app-footer>.container {
     justify-content: space-between;
     align-items: center;
 }
 
-#sources >div, #main-menu >div, #close-call>div{
+#sources>div,
+#main-menu>div,
+#close-call>div {
     text-align: center;
     padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
-
-#app-footer>.container p{
+#app-footer>.container p {
     font-size: 0.60rem;
 }
 
-#app-footer, #app-footer i{
+#app-footer,
+#app-footer i {
     color: white;
+    font-size: 1.3rem;
 }
 
-#share-screen a > i{
+#share-screen a>i {
     color: #4bc800;
 }
 
-#close-call{
+#close-call {
     background-color: #4a4a4a;
-    color: #f30a1c;
     padding: 1rem;
+}
+
+#close-call a {
+    color: #f30a1c;
+    text-decoration: none;
+    font-size: 0.75rem;
 }
 
 
 
 /* #endregion FOOTER */
-
-
