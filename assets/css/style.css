@@ -15,6 +15,10 @@ body {
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 .col-7 {
     width: calc(100% / 7);
 }
@@ -46,6 +50,25 @@ body {
 
 .container {
     background-color: black;
+    position: relative;
+}
+
+#float-menu {
+    position: absolute;
+    top: 1%;
+    right: 0;
+}
+
+#float-menu a{
+    color: white;
+    background-color: #4a4a4a;
+    border-radius: 0.25rem;
+    padding: 0.15rem;
+    font-size: 0.65rem;
+}
+
+#float-menu .maximize{
+    margin: 0 0.2rem;
 }
 
 .row {
@@ -120,7 +143,6 @@ body {
 
 #close-call a {
     color: #f30a1c;
-    text-decoration: none;
     font-size: 0.75rem;
 }
 
