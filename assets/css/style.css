@@ -6,6 +6,14 @@
 }
 
 /* #region COMMON and Utilities */
+:root{
+    --zoom-red: #f30a1c;
+    --zoom-dark: #222222;
+    --zoom-lgrey: #4a4a4a;
+    --zoom-bg-lgrey-rgba: rgba(128, 128, 128, 0.5);
+    --zoom-lgreen: #4bc800;
+}
+
 body {
     font-family: 'Internacional', 'Helvetica', 'Arial';
 }
@@ -36,7 +44,7 @@ a {
 /* #region MAIN */
 
 #app-main {
-    background: #222222;
+    background: var(--zoom-dark);
     height: calc(100vh - 3rem);
 }
 
@@ -53,7 +61,7 @@ a {
 
 #float-menu a {
     color: white;
-    background-color: #4a4a4a;
+    background-color: var(--zoom-bg-lgrey-rgba);
     border-radius: 0.25rem;
     padding: 0.15rem;
     font-size: 0.65rem;
@@ -87,7 +95,7 @@ a {
     padding: 0.25rem;
     bottom: 4%;
     left: 0;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: var(--zoom-bg-lgrey-rgba);
 }
 
 /* #endregion MAIN */
@@ -99,7 +107,7 @@ a {
 
 #app-footer,
 #app-footer>.container {
-    background: #222222;
+    background: var(--zoom-dark);
 }
 
 #app-footer>.container {
@@ -131,16 +139,16 @@ a {
 }
 
 #share-screen a>i {
-    color: #4bc800;
+    color: var(--zoom-lgreen);
 }
 
 #close-call {
-    background-color: #4a4a4a;
+    background-color: var(--zoom-lgrey);
     padding: 1rem;
 }
 
 #close-call a {
-    color: #f30a1c;
+    color: var(--zoom-red);
     font-size: 0.75rem;
 }
 
