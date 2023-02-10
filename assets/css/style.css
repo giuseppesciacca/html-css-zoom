@@ -6,7 +6,7 @@
 }
 
 /* #region COMMON and Utilities */
-:root{
+:root {
     --zoom-red: #f30a1c;
     --zoom-dark: #222222;
     --zoom-lgrey: #4a4a4a;
@@ -18,17 +18,12 @@ body {
     font-family: 'Internacional', 'Helvetica', 'Arial';
 }
 
-.container {
-    width: 100%;
-    margin: auto;
+button{
+    border: none;
 }
 
 a {
     text-decoration: none;
-}
-
-.col-7 {
-    width: calc(100% / 7);
 }
 
 .d-flex {
@@ -44,38 +39,41 @@ a {
 /* #region MAIN */
 
 #app-main {
-    background: var(--zoom-dark);
+    background: black;
     height: calc(100vh - 3rem);
-}
-
-.container {
-    background-color: black;
-    position: relative;
+    overflow-y: auto;
 }
 
 #float-menu {
     position: absolute;
     top: 1%;
     right: 0;
+    z-index: 1000;
 }
 
-#float-menu a {
+#float-menu button {
     color: white;
     background-color: var(--zoom-bg-lgrey-rgba);
     border-radius: 0.25rem;
     padding: 0.15rem;
     font-size: 0.65rem;
+    cursor: pointer;
 }
 
 #float-menu .maximize {
-    margin: 0 0.2rem;
+    margin: 0 2rem 0 0.5rem;
 }
 
 .row {
-    padding: 2rem 3rem;
+    height: 100%;
+    padding: 0.75rem 2rem;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
 }
 
-.col-7 {
+.col {
+    width: calc(100% / 7);
     padding: 0.25rem;
 }
 
@@ -86,6 +84,10 @@ a {
 
 .card>img {
     max-width: 100%;
+}
+
+.fa-microphone-slash{
+    color: var(--zoom-red);
 }
 
 .card p {
@@ -102,17 +104,9 @@ a {
 
 /* #region FOOTER */
 #app-footer {
-    height: 3rem;
-}
-
-#app-footer,
-#app-footer>.container {
     background: var(--zoom-dark);
-}
-
-#app-footer>.container {
+    height: 3rem;
     justify-content: space-between;
-    align-items: center;
 }
 
 #sources,
@@ -128,7 +122,7 @@ a {
     padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
-#app-footer>.container p {
+#app-footer p {
     font-size: 0.60rem;
 }
 
@@ -142,12 +136,9 @@ a {
     color: var(--zoom-lgreen);
 }
 
-#close-call {
+#end-meeting {
     background-color: var(--zoom-lgrey);
     padding: 1rem;
-}
-
-#close-call a {
     color: var(--zoom-red);
     font-size: 0.75rem;
 }
